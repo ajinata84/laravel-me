@@ -1,0 +1,47 @@
+.container {
+  height: 350px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  overflow: hidden;
+  background: #d6d6d4;
+  pointer-events: none;
+}
+
+.slider {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.sv {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sv img {
+  height: auto;
+}
+
+.cursor, .cursorlabel {
+  width: 80px;
+  height: 80px;
+  background-color: #0015ce;
+  position: absolute;
+  pointer-events: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.cursorlabel{
+    background: transparent;
+}

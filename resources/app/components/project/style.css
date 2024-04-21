@@ -1,0 +1,90 @@
+.project {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #ababab;
+  padding: 50px 100px 50px 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.project-section {
+  background: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.pins {
+  font-weight: 100;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+
+  align-self: flex-start;
+}
+
+h2 {
+  font-size: 4rem;
+  transition: all 0.2s ease;
+}
+
+p {
+  transition: all 0.2s ease;
+}
+
+.project:hover {
+  opacity: 0.4;
+}
+
+.project:hover h2 {
+  transform: translateX(-10px);
+}
+
+.project:hover p {
+  transform: translateX(10px);
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  z-index: 98;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+
+  /* filter: ; */
+}
+
+.drawer {
+  background-color: white;
+  position: fixed;
+  z-index: 99;
+  width: 60vw;
+  left: 50;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.drawer-content {
+  width: 70%;
+  align-self: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.md-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
